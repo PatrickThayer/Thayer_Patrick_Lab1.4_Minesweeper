@@ -9,8 +9,12 @@ public:
 	int nFieldWidth = 10;
 	int nFieldHeight = 10;
 	wxButton** btn;
+	int* nField = nullptr;
+	bool bFirstClick = true;
 
 	Window();
+
+	~Window();
 
 	void OnButtonClicked(wxCommandEvent& evt);
 
