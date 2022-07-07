@@ -10,11 +10,14 @@ Window::Window() : wxFrame(nullptr, wxID_ANY, "Minesweeper", wxPoint(300, 100), 
 	nField = new int[nFieldWidth * nFieldHeight];
 	wxGridSizer* grid = new wxGridSizer(nFieldHeight, nFieldWidth, 0, 0);
 
+	wxFont font(15, wxFONTFAMILY_DEFAULT, wxFONTSTYLE_NORMAL, wxFONTWEIGHT_BOLD, false);
+
 	for (int x = 0; x < nFieldWidth; x++)
 	{
 		for (int y = 0; y < nFieldHeight; y++)
 		{
 			btn[y * nFieldWidth + x] = new wxButton(this, 10000 + (y * nFieldWidth + x));
+			btn[y * nFieldWidth + x]->SetFont(font);
 			grid->Add(btn[y * nFieldWidth + x], 1, wxEXPAND | wxALL);
 
 			btn[y * nFieldWidth + x]->Bind(wxEVT_COMMAND_BUTTON_CLICKED, &Window::OnButtonClicked, this);
