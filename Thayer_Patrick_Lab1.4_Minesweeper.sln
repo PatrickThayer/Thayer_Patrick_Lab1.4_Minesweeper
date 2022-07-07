@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.32510.428
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Thayer_Patrick_Lab1.4_Minesweeper", "Thayer_Patrick_Lab1.4_Minesweeper\Thayer_Patrick_Lab1.4_Minesweeper.vcxproj", "{644498D7-4D19-41A1-879A-7DF2A210E822}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3299F423-48E3-44B6-8DF0-D2535B7E8F6C}"
+	ProjectSection(SolutionItems) = preProject
+		class.txt = class.txt
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
